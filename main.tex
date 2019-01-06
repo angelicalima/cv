@@ -1,0 +1,136 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt,a4paper,sans,english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[portuguese]{babel}
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% adjust the page margins
+\usepackage[scale=0.89]{geometry}
+\usepackage{setspace}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Angelica}{Lima}
+\title{QA Automation Engineer | Test Automation Engineer }                               % optional, remove / comment the line if not wanted
+\address{ Belo Horizonte-Brazil}{}%`{ optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+353~(08)~3858~0600}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+55~(31)~99477~9124}                   % optional, remove / comment the line if not wanted
+\email{lima.angelica@outlook.com}                               % optional, remove / comment the line if not wanted
+\social[linkedin][https://www.linkedin.com/in/angelicalima1/]{angelicalima1}
+\social[github][https://github.com/angelicalima]{angelicalima}
+%\extrainfo{Pretensão Salarial: EUR4000,00}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\listfiles
+\begin{document}
+\makecvtitle
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2018}{QA Engineer}{Avenue Code}{Belo Horizonte - Brazil}{}{
+\begin{itemize}
+\item Ensure the quality of the products developed;
+\item Promoting knowledge about test concepts and quality for the team;
+\item Automating UI and API tests using BDD with cucumber;
+\item Implementing proof of concepts by choosing the best frameworks and technologies for testing specific projects;
+\item Version control using GitLab;
+\item Developing testing project architecture applying design patterns.\newline
+\end{itemize}
+}
+
+\cventry{2017--2018}{Automation Test Engineer}{Capgemini}{Belo Horizonte - Brazil}{}{
+Prosegur (Outsourcing):
+\begin{itemize}
+\item Participation in research, analysis and development of testing framework architecture based on TestFx for desktop test automation;\item Proposing improvements to the development team on issues related to software testing and quality;\item Development of pilot project for automation of web application tests using Selenium Webdriver;\item Training QA team to start testing automation activities;\item Defining standardization, rules for automation and the best test practices;\item Structuring test architecture using Page Object design pattern;\item Analyzing, modeling, and automating test cases for systems and web services (SOAP and REST);\item Researching, evaluating and validating test automation framework for mobile systems;\item Designing, developing, implementing and maintaining test automation projects.\newline
+\end{itemize}
+}
+\cventry{2014--2016}{Test Analyst (Firmware)}{Fumsoft/Base2 Tecnologia}{Belo Horizonte - Brazil}{}{
+Maxtrack (Outsourcing):
+\begin{itemize}
+\item Activities in planning, analyzing, specifying, automating and executing requirements-based test cases;
+\item Reporting nonconformities and defects found in the software;
+\item Prioritizing resolution and monitoring of issues with constant interaction with development team;
+\item Automating CAN (Controller Area Network) tests for trackers using Python and Ginkgo USB-CAN device;
+\item Producing documentation (binary protocol, instruction manuals and quick guide) and developing wizard for products;
+\item Executing manual, regression, stress and exploratory tests;
+\item Developing scripts to automate tests and interpret devices’ data.
+\end{itemize}
+}
+
+\section{Certifications}
+\cventry{nov - 2017}{CTAL-TAE Test Automation Engineer}{ISTQB - International Software Testing Qualifications Board}{}{\textit{ 17-CTAL-TAE-00538-BR}}{} 
+\cventry{oct - 2015}{CTFL-AT Agile Tester}{ISTQB - International Software Testing Qualifications Board}{}{\textit{15-CTFL-AT4214-BR}}{} 
+\cventry{apr - 2015}{CTFL Foundation}{ISTQB - International Software Testing Qualifications Board}{}{\textit{ 15-CTFL-03839-BR}}{} 
+
+
+
+\section{Education}
+\cventry{2011--2014}{System Analysis and Development}{Federal University of Viçosa (UFV)}{Florestal}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Academic Projects}
+\cventry{2012--2013}{HydroNode: Implementation libraries in a underwater sensor network node}{ Laboratory Embedded Systems (LESC) }{}{\textit{ UFV - Florestal}}{Implementation and documentation libraries in a underwater sensor network node using C programming language and microcontrollers MSP430.} 
+
+\section{Computer skills}
+\cventry{Technologies and methodologies}{C\#, Python, C,  Delphi, Java, Javascript/Typescript, Android, Selenium Webdriver, WebdriverIO, Protractor, Cucumber, TestFX, Xamarin.UITest, Unittest, JUnit, JBehave, Docker, Doxygen, Javadoc, SQL, NoSQL, SOAP, REST,
+PyCharm, Codeblocks, Visual Studio, Visual Studio Code, IntelliJ, IAR, Eclipse, DevCpp, TestLink, Git,  SVN, TFS, MTM,  PuTTy,  Doxygen, Serial Port Monitor, LabSat, Postman, SoapUI,
+Scrum, Kanban, BDD}{}{}{}{}
+
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
